@@ -1,0 +1,12 @@
+name: Hello World Workflow
+
+on:
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest # Specifies the runner environment
+
+    steps:
+      - name: Say Hello
+        run: mkdir newfolder # Executes a simple command
